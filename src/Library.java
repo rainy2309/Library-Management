@@ -2,13 +2,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Library {
-    private List<Book> books;
+    private static List<Book> books;
 
     public Library() {
         this.books = new ArrayList<Book>();
     }
     //add
-    public void addBook(Book book) {
+    public static void addBook(Book book) {
         books.add(book);
         System.out.println("Đã thêm sách: "+book.getTitle());
     }
