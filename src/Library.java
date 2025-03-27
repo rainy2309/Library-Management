@@ -2,17 +2,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Library {
-    private static List<Book> books;
+    public List<Book> books;
 
     public Library() {
-        this.books = new ArrayList<Book>();
+        this.books = new ArrayList<>();
     }
-    //add
-    public static void addBook(Book book) {
+    public void addBook(Book book) {
         books.add(book);
         System.out.println("Đã thêm sách: "+book.getTitle());
     }
-   //delete
     public void deleteBook(int id) {
         Book bookremove = null;
         for (Book book : books) {
@@ -28,7 +26,6 @@ public class Library {
             System.out.println("Không tìm thấy id");
         }
     }
-    //update
     public void updatebook(int id, String title, String author, int year){
         for (Book book: books){
             if(book.getId()==id){
@@ -39,7 +36,6 @@ public class Library {
             }
         }
     }
-    //display
     public void displayAllBooks(){
         for(Book book:books){
             if(book==null){
