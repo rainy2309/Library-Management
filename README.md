@@ -5,18 +5,18 @@ Objective:
 Create a Java console application using Object-Oriented Programming (OOP) principles to manage a library's book collection. The system should allow users to add, delete, update, and display books.
 
 Requirements:
-1. Classes to Implement:
-Book Class
+Classes to Implement:
+# Book Class
 
-Attributes: id (int), title (String), author (String), year (int).
+  Attributes: id (int), title (String), author (String), year (int).
 
-Methods: Constructor, getters/setters, toString().
+  Methods: Constructor, getters/setters, toString().
 
-Library Class
+# Library Class
 
-Attributes: A list to store Book objects (List<Book>).
+  Attributes: A list to store Book objects (List<Book>).
 
-Methods:
+  Methods:
 
 addBook(Book book): Add a new book.
 
@@ -26,7 +26,7 @@ updateBook(int id, String title, String author, int year): Update book details.
 
 displayAllBooks(): Show all books in the library.
 
-Main Class
+# Main Class
 
 Contains the main method to run the program.
 
